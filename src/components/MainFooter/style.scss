@@ -1,0 +1,7 @@
+@use './../../sass/Variable.scss' as variable;
+
+.MainFooter{
+    & li:hover{
+        color: variable.$primary-light;
+    }
+}

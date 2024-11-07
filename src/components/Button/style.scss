@@ -1,0 +1,53 @@
+@use '../../sass/Variable.scss' as variable;
+button{
+    text-transform: capitalize;
+    
+    &:hover{
+        opacity: 0.6;
+    }
+}
+
+.btn-pill{
+    border-radius: variable.$border-radius-pill;
+}
+
+.btn-normal{
+    border-radius: variable.$border-radius-normal;
+}
+
+.btn-none{
+    border-radius: none;
+}
+
+.btn-primary{
+    background-color: variable.$primary-light;
+    color: variable.$white;
+    font-weight: variable.$font-wights-bold;
+
+}
+
+.btn-selected{
+    background-color: variable.$Very-Dark-Violet;
+    color: variable.$white;
+    font-weight: variable.$font-wights-bold;
+}
+
+.btn-transparent{
+    background-color: transparent;
+    color: variable.$gray;
+    font-weight: variable.$font-wights-bold;
+    &:hover{
+        color: variable.$Very-Dark-Violet;
+    }
+}
+
+
+
+.btn-mid{
+    min-width: 80px;
+}
+
+.btn-large{
+    min-width: 100px;
+    min-height: 50px;
+}

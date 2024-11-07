@@ -1,0 +1,81 @@
+@use './Variable.scss' as varible;
+
+.muted-text{
+    color: varible.$Grayish-violet;
+}
+
+.primary-text{
+color: varible.$primary-light;
+}
+
+.secandray-text{
+    color: varible.$primary-dark;
+}
+
+.bg-dark{
+    background-color: varible.$Very-Dark-Violet;
+}
+
+.bg-white{
+    background-color: varible.$white;
+}
+
+.primary-dark-bg{
+ background-color: varible.$primary-dark;
+}
+
+.text-white{
+    color: varible.$white;
+}
+
+.text-gray{
+    color: varible.$gray;
+}
+
+.text-error{
+    color: varible.$danger;
+}
+
+.border-radius-normal{
+    border-radius: varible.$border-radius-normal;
+}
+
+input{
+    border-radius: varible.$border-radius-normal;
+    outline: none;
+    &.error{
+        border: 1px solid varible.$danger;
+
+        &::placeholder{
+            color: varible.$danger;
+        }
+    }
+
+}
+
+.font-weight-bold{
+    font-weight: varible.$font-wights-bold;
+}
+
+.font-weight-normal{
+    font-weight: varible.$font-wights-normal;
+}
+
+.font-size-mid{
+ font-size: varible.$font-size-md;
+}
+
+.font-size-lg{
+ font-size: varible.$font-size-lg;
+ font-weight: varible.$font-wights-bold;
+}
+
+.font-size-xl{
+ font-size: varible.$font-size-xl;
+ font-weight: varible.$font-wights-bold;
+}
+
+.font-size-xxl{
+    font-size: varible.$font-size-xxl;
+    font-weight: varible.$font-wights-bold;
+   }

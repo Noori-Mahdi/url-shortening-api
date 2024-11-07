@@ -1,0 +1,8 @@
+@use './../../sass/Variable.scss' as variable;
+
+.main-nav{
+    text-transform: capitalize;
+    & li:hover{
+        color: variable.$Very-Dark-Violet;
+    }
+}
