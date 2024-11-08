@@ -9,7 +9,6 @@ import { Bord } from '../../components/Bord/Bord';
 import { List } from '../../components/List/List';
 import { Card } from '../../components/Card/Card';
 import { cardData } from '../../data/obj';
-import { useEffect, useState } from 'react';
 
 export const Home = () => {
 
@@ -17,7 +16,7 @@ export const Home = () => {
     return ( 
         <div className='home'>
             <div className='flex mx-5 lg:mx-0 flex-col lg:flex-row justify-between items-center lg:ps-24 lg:mt-32 mt-12'>
-                <div className='order-2 lg:order-1 w-full text-center lg:w-5/12 mt-10 lg:mt-0'>
+                <div className='order-2 lg:order-1 w-full text-center lg:w-5/12 mt-10 lg:mt-0 test'>
                     <h3 className='text-7xl font-bold'>More than just shorter links</h3>
                     <p className='lg:text-xl mx-2 mt-3 lg:mx-0 lg:mt-0 text-3xl font-weight-normal muted-text mb-10'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
                     <Button color='btn-primary' customClass={'rounded-full w-56 h-16 text-2xl '} title='go started'/>

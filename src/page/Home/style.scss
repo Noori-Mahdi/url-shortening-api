@@ -10,12 +10,13 @@
         text-align: center;
     }
 
-    &::after{
+    & .test::after{
         content: '';
-        top: 450px;
+        top: 33%;
+        left: 0;
         z-index: -1;
         position: absolute;
-        width: 100%;
+        width: 100vw;
         height: 80%;
         background-color: variable.$gray;
     }
