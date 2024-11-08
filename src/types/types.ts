@@ -4,11 +4,8 @@ export interface MainNavPropsType {
 
 export interface ButtonPropsType {
     title:string,
-    customSize?: {width:number ,height:number}
-    borderRadius: 'btn-pill'|'btn-normal'|'btn-none';
+    customClass: string | null,
     color: 'btn-primary' | 'btn-selected' | 'btn-transparent';
-    size?: 'btn-mid' | 'btn-large';
-    fontSize?: 'font-size-lg' | 'font-size-mid';
 }
 
 export interface InputPropsType {

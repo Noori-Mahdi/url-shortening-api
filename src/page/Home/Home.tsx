@@ -9,36 +9,37 @@ import { Bord } from '../../components/Bord/Bord';
 import { List } from '../../components/List/List';
 import { Card } from '../../components/Card/Card';
 import { cardData } from '../../data/obj';
+import { useEffect, useState } from 'react';
 
 export const Home = () => {
-        
+
     
     return ( 
         <div className='home'>
-            <div className='flex justify-between items-center ps-24 mt-32'>
-                <div className='w-5/12'>
-                    <h3 className='font-size-xxl'>More than just shorter links</h3>
-                    <p className='font-size-mid font-weight-normal muted-text mb-10'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
-                    <Button customSize={{width:150,height:40}} borderRadius='btn-pill' size='btn-mid' color='btn-primary' fontSize='font-size-mid' title='go started'/>
+            <div className='flex mx-5 lg:mx-0 flex-col lg:flex-row justify-between items-center lg:ps-24 lg:mt-32 mt-12'>
+                <div className='order-2 lg:order-1 w-full text-center lg:w-5/12 mt-10 lg:mt-0'>
+                    <h3 className='text-7xl font-bold'>More than just shorter links</h3>
+                    <p className='lg:text-xl mx-2 mt-3 lg:mx-0 lg:mt-0 text-3xl font-weight-normal muted-text mb-10'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                    <Button color='btn-primary' customClass={'rounded-full w-56 h-16 text-2xl '} title='go started'/>
                 </div>
-                <div className='flex justify-center items-center w-7/12 ml-12 relative'>
-                    <img className='absolute left-24' src={photo} alt="" />
+                <div className='order-1 lg:order-2 flex justify-center items-center w-full lg:w-7/12 lg:ml-12 relative'>
+                    <img className='lg:absolute ms-32 lg:left-24' src={photo}/>
                 </div>
             </div>
-            <div className=' px-24 mt-32'>
-                <div className='h-28'>
+            <div className=' px-5 lg:px-24 mt-32'>
+                <div className='h-44 lg:h-28'>
                     <Bord flex positionChild={{align:'items-center',justify:'justify-center'}} borderRadiuosClass={'border-radius-normal'} bgColorClass='primary-dark-bg' bgImg={bgImg}>
                         <InputBox btnTitle='shorten it!' placeholder='shorten a link here...'/>
                     </Bord>
                 </div>
                 <Bord flex positionChild={{align:'items-center',justify:'justify-center'}} borderRadiuosClass={'border-radius-normal'}>
-                    <List links={[{normalLink:'test',shortLink:'test',selected:false},{normalLink:'test',shortLink:'test',selected:false}]}/>
+                    <List  links={[{normalLink:'test',shortLink:'test',selected:false},{normalLink:'test',shortLink:'test',selected:false}]}/>
                 </Bord>          
-                <div className='text-box mt-16 w-2/6 m-auto'>
-                    <h2 className='font-size-xl'>advanced statistics</h2>
-                    <p className='muted-text mt-4 font-weight-normal'>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+                <div className='text-box mt-16 lg:w-7/12 m-auto'>
+                    <h2 className='text-5xl font-bold'>advanced statistics</h2>
+                    <p className='muted-text mt-4 text-lg font-medium mx-4'>Track how your links are performing across the web with our advanced statistics dashboard.</p>
                 </div>
-                <div className='flex justify-between items-center cardBox'>
+                <div className='flex flex-col mt-20 lg:mt-4 lg:flex-row justify-between items-center cardBox'>
                     {cardData.map((e,index)=>
                         <Card imgCard={e.imgCard} infoCard={e.infoCard} titleCard={e.titleCard} index={index}/>
                     )}
@@ -48,7 +49,7 @@ export const Home = () => {
                     <Bord flex positionChild={{align:'items-center',justify:'justify-center'}} bgColorClass='primary-dark-bg' bgImg={bgImg2}>
                         <div className='text-center py-10'>
                             <h3 className='font-size-xl text-white'>boost your links today</h3>
-                            <Button  borderRadius='btn-pill' title='get started' color='btn-primary' fontSize='font-size-lg' customSize={{width:180,height:40}}/>
+                            <Button title='get started' color='btn-primary' customClass={'rounded-full w-4/12 h-14 text-lg font-bold'}/>
                         </div>
                     </Bord>
             </div>

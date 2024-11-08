@@ -3,7 +3,7 @@ button{
     text-transform: capitalize;
     
     &:hover{
-        opacity: 0.6;
+        filter: brightness(1.2);
     }
 }
 
